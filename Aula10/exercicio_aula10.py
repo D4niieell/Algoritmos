@@ -7,4 +7,5 @@
 
 nome = input("Digite o seu nome: ")
 idade = input("Digite sua idade: ")
-with open("cadastros.txt", "w") as 
+with open("cadastros.txt", "w") as nota_nome:
+    nota_nome.write

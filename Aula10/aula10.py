@@ -27,6 +27,3 @@ with open("nota.txt", "r") as leitura_arquivo:
 # Adicionar um texto ao final do seu arquivo
 with open("nota.txt", "a") as adiciona_novo_texto:
     adiciona_novo_texto.write("\n Aqui tem uma nova linha de texto") 
-
-
-
