@@ -4,7 +4,6 @@ import random
 import math
 import datetime
 
-
 numero_aleatorio = random.randint(1000, 2000)
 
 # GRANDIANT -> Gera apenas numeros aleatorios
@@ -19,7 +18,6 @@ alunos = ["Israel", "Adenilson", "Anna", "Wellington", "Jonathan", "Isabelly", "
 # CHOICE -> escolher de forma aleatoria
 sorteado = random.choice(alunos)
 sorteado2 = random.choice(alunos)
-
 print("Dupla Dinamica:", sorteado, " - ", sorteado2)
 
 # Biblioteca math
