@@ -55,17 +55,9 @@ numero_usuario = int(input("Digite um numero de 1 a 3: "))
 
 if numero_usuario == 1:
     print("1")
+
 elif numero_usuario == 2:
     print("2")
-
-
-
-
-
-
-
-
-
 
 # resposta = requests.get(URL)
 # json = resposta.json()
