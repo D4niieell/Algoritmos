@@ -13,9 +13,21 @@ conexao = pySQL.connect(
 # Cria o cursor - versão simples (retorna {"coluna": valor})
 cursor = conexao.cursor(pySQL.cursors.DictCursor)
 
-# / Buscar todos os registros /
+# | Buscar todos os registros |
 cursor.execute("SELECT * FROM clientes")
 todos = cursor.fetchall()
 
-for cliente in todos:
-    print(cliente["nome"], cliente["email"], "-", cliente["telefone"])
+# for cliente in todos:
+#     print(cliente["nome"], cliente["email"], "-", cliente["telefone"])
+
+# | Buscar um unico registro por ID |
+# cursor.execute("SELECT nome, id_cliente FROM clientea WHERE id_cliente = 1")
+# cliente = cursor.fetchone()
+# print(cliente) # {'id': 1, nome, 'Maria', 'email': '...'}
+
+# | Buscar com filtro dainâmico (SEGURO) |
+nome_busca = "Ursula%"
+cursor.execute("SELECT * FROM clientes WHERE nome LIKE %s", (nome_busca),)
+
+resultado = cursor.fetchall()
+print(resultado)
