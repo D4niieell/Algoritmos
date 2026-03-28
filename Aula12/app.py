@@ -55,7 +55,7 @@ elif opcao == 3:
     print("Opção 3 selecionada")
     linha_apagada = int(input("Digite um numero inteiro: "))
 
-    # LER ECEL
+    # LER EXCEL
     leitura_excel = pd.read_excel("Aula12\Alunos.xlsx")
      
     # APAGAR UM DADO EXCEL

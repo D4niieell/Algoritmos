@@ -16,7 +16,7 @@ excel = pd.DataFrame(dados)
 
 # to_excel() > serve criar uma nova planilha, pegar os dados digitados pelo usuario em formato DataFrame e gravar os dados na planilha criada
 
-# excel.to_excel("Aula12\cadastro_alunos.xlsx", index=False)
+excel.to_excel("Aula12\cadastro_alunos.xlsx", index=False)
 
 # LOC > NUMERO
 # Ler o excel
@@ -27,7 +27,7 @@ leitura_excel.loc[nova_linha, "nome"] = dados["nome"]
 leitura_excel.loc[nova_linha, "idade"] = dados["idade"]
 leitura_excel.loc[nova_linha, "altura"] = dados["altura"]
 
-# print(leitura_excel["nome"])
+print(leitura_excel["nome"])
 
 # APAGAR LINHAS DE UMA PLANILHA
 leitura_excel = leitura_excel.drop(5)
